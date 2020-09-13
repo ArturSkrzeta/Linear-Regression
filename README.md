@@ -30,7 +30,7 @@
     <br>
     - the main puropse on this is to reduce the error = > the smallest error the best fit line of regression <br>
     - performing n iterations for different m <br>
-    - after every iteration, a predicted value y is being calculated with different m value <br>
+    - after every iteration, a predicted value y is being calculated using different m value <br>
     - next step is comparing distances between actual value and predicted one <br>
     - when in a current iteration the distance between the predicted value and actual one is minimum - for this iteration we take m value for the best fit line <br>
   </li>
