@@ -33,9 +33,9 @@
   </li>
   <li>Where:
     <br>
-    - y is dependent variable
-    - x is independent variable
-    - m is a slope of the line
+    - y is dependent variable<br>
+    - x is independent variable<br>
+    - m is a slope of the line<br>
     - c is point of intersection with y axis
   </li>
 </ul>
