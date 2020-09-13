@@ -1,5 +1,20 @@
 <h2>Linear Regression</h2>
 <p><b>Regression analysis</b> is a predictive method that allos investigating the relationship between y (dependent variable) and x (independent value).</p>
+<h3>Application of regression</h3>
+<ul>
+  <li>Determining the strength of ralationships betwenn variables - of how x values effects y values:
+    <br>
+    - e.g. relationship between employee's age and income, earnings and marketing sped
+  </li>
+  <li>Forecasting impact or effect on y values by changing one or more x values:
+    <br>
+    - e.g. how much income increases when 10 000 USD invested in the specific business field.
+  </li>
+  <li>Trend and future values forcasting:
+    <br>
+    - estimating the stock price in the future when trend is stable
+  </li>
+</ul>
 <h3>Intro</h3>
 <ul>
   <li>Linear Regression - approximating linear function to scatter data in order to find out the general trend.</li>
