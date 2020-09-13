@@ -19,7 +19,7 @@
     <img src="images/predictions.JPG">
     <br>
     <br>
-    3. We treat the distance between actal value and predicted as an error:
+    3. We treat the distance between actal value and predicted one as an error:
     <br>
     <br>
     <img src="images/error.JPG">
