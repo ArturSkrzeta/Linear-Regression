@@ -1,6 +1,6 @@
 <h2>Linear Regression</h2>
 
-<p><b>Regression analysis</b> is a predictive method that allos investigating the relationship between y (dependent variable) and x (independent value).</p>
+<p><b>Regression analysis</b> is a predictive method that allows to investigate the relationship between y (dependent variable) and x (independent value).</p>
 
 <h3>Application of regression</h3>
 <ul>
