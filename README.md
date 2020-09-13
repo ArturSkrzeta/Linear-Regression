@@ -23,6 +23,7 @@
     <br>
     <br>
     <img src="images/error.JPG">
+    <br>
   </li>
   <li> Finding the best fit regression line with <b>gradient search</b>
     <br>
