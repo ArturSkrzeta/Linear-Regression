@@ -32,7 +32,7 @@
     - performing n iterations for different m <br>
     - using different value of m we calculate the equation of <b>y = mx + c</b> <br>
     - after every iteration, a predicted value y is being calculated using different m value <br> <br>
-    <img src="images/gradient.GIF">
+    <img src="images/gradient.gif">
     <br>
     <br>
     - next step is comparing distances between actual value and predicted one <br>
