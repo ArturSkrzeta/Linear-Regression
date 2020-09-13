@@ -9,6 +9,6 @@
     <br>
     <img src="images/linear_reg.JPG">
     <br>
-    <img src="images/prediction.JPG">
+    <img src="images/predictions.JPG">
   </li>
 </ul>
