@@ -1,5 +1,7 @@
 <h2>Linear Regression</h2>
 <p><b>Regression analysis</b> is a predictive method that allos investigating the relationship between y (dependent variable) and x (independent value).</p>
+
+
 <h3>Application of regression</h3>
 <ul>
   <li>Determining the strength of ralationships betwenn variables - of how x values effects y values:
@@ -15,6 +17,14 @@
     - estimating the stock price in the future when trend is stable.
   </li>
 </ul>
+
+<h3>Linear Regression</h3>
+<ul>
+  <li>Linear correlation between continuous x and y variable.</li>
+  <li>LR output/prediction is the value of variable.</li>
+  <li>Accuracy measured by loss or R squared</li>
+</ul>
+
 <h3>Intro</h3>
 <ul>
   <li>Linear Regression - approximating linear function to scatter data in order to find out the general trend.</li>
