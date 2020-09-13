@@ -30,7 +30,7 @@
     <br>
     - the main puropse on this is to reduce the error = > the smallest error, the best fit line<br>
     - performing n iterations for different m <br>
-    - using different value of m we calculate the equation of <b>y = mx + c</b>
+    - using different value of m we calculate the equation of <b>y = mx + c</b> <br>
     - after every iteration, a predicted value y is being calculated using different m value <br>
     - next step is comparing distances between actual value and predicted one <br>
     - when in a current iteration the distance between the predicted value and actual one is minimum - for this iteration we take m value for the best fit line <br>
