@@ -14,8 +14,8 @@
   </li>
   <li>Trend and future values forcasting:
     <br>
-    - estimating the stock price in the future when trend is stable.
-  </li>
+    - estimating the sales in the future when trend is stable in time.
+  </li> 
 </ul>
 
 <h3>Linear Regression</h3>
@@ -23,6 +23,8 @@
   <li>Linear correlation between continuous x and y variable.</li>
   <li>LR output/prediction is the value of variable.</li>
   <li>Accuracy measured by loss or R squared</li>
+  <li>When y values increase along with growth of x values then we have <b>positive linear regression</b></li>
+  <li>When y values decrease along with growth of x values then we have <b>negative linear regression</b></li>
 </ul>
 
 <h3>Intro</h3>
