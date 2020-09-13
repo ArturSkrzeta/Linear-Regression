@@ -11,6 +11,9 @@
     <br>
     <br>
     <img src="images/predictions.JPG">
+    <br>
+    <br>
+    <img src="images/error.JPG">
   </li>
   <li> Finding the best fit regression line with <b>gradient search</b>
     <br>
