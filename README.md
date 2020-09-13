@@ -79,5 +79,11 @@
     - next step is comparing distances between actual value and predicted one <br>
     - when in a current iteration the distance between the predicted value and actual one is minimum - for this iteration we take m value for the best fit line <br>
   </li>
-  
+</ul>
+
+<h3>Accuracy</h3>
+<ul>
+  <li>R squarred method to assess how close the data are to the fitted regression line.</li>
+  <li>The higher R squqrred value the better line fit.</li>
+  <li></li>
 </ul>
