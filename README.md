@@ -6,15 +6,18 @@
   <li>In regressing we want to predict continueous values as opposed to classification where we want to predict a classification of a case.</li>
   <li>Calculating line of regression:
     <br>
+    <br>
     - 1.
     <br>
     <br>
     <img src="images/linear_reg.JPG">
     <br>
+    <br>
     - 2.
     <br>
     <br>
     <img src="images/predictions.JPG">
+    <br>
     <br>
     - 3.
     <br>
