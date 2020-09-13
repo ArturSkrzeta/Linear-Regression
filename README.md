@@ -12,4 +12,12 @@
     <br>
     <img src="images/predictions.JPG">
   </li>
+  <li> Finding the best fit regression line with <b>gradient search</b>
+    <br>
+    - performing n iterations for different m
+    - after every iteration, a predicted value y is being calculated
+    - comparing distance between actual value and predicted one
+    - when in iteration the distance between the predicted value and actual one is minimum - for this iteration we take m value for the best fit line
+  </li>
+  
 </ul>
