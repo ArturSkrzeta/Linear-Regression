@@ -22,9 +22,22 @@
 <ul>
   <li>Linear correlation between continuous x and y variable.</li>
   <li>LR output/prediction is the value of variable.</li>
-  <li>Accuracy measured by loss or R squared</li>
-  <li>When y values increase along with growth of x values then we have <b>positive linear regression</b></li>
-  <li>When y values decrease along with growth of x values then we have <b>negative linear regression</b></li>
+  <li>Accuracy measured by loss or R square.</li>
+  <li>When y values increase along with growth of x values then we have <b>positive linear regression</b>:
+    <br>
+    - the function equation: y = mx + c
+  </li>
+  <li>When y values decrease along with growth of x values then we have <b>negative linear regression</b>:
+    <br>
+    - the function equation: y = -mx + c
+  </li>
+  <li>Where:
+    <br>
+    - y is dependent variable
+    - x is independent variable
+    - m is a slope of the line
+    - c is point of intersection with y axis
+  </li>
 </ul>
 
 <h3>Intro</h3>
