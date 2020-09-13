@@ -88,4 +88,9 @@
   <img src="images/rsquarred.JPG">
   <br>
   <li>When <b>R ** 2 = 1</b> then predicted values covers actual values in 100%.</li>
+  <li>When <b>R ** 2 = 0.002</b> then actual values are very far from line of regression
+    <br>
+    - a lof of so called outliers <br>
+    - I cannot take any forecast anything from the data
+  </li>
 </ul>
