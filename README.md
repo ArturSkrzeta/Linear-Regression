@@ -7,19 +7,19 @@
   <li>Calculating line of regression:
     <br>
     <br>
-    - 1. Calculating m and c coeffeicients based on the actual values:
+    1. Calculating m and c coeffeicients based on the actual values:
     <br>
     <br>
     <img src="images/linear_reg.JPG">
     <br>
     <br>
-    - 2. Linear line through the predicted points for given m, c and set of x's values:
+    2. Linear line through the predicted points for given m, c and set of x's values:
     <br>
     <br>
     <img src="images/predictions.JPG">
     <br>
     <br>
-    - 3. We treat the distance between actal value and predicted as an error:
+    3. We treat the distance between actal value and predicted as an error:
     <br>
     <br>
     <img src="images/error.JPG">
