@@ -1,5 +1,5 @@
 <h2>Linear Regression</h2>
-
+<p><b>Regression analysis</b> is a predictive method that allos investigating the relationship between y (dependent variable) and x (independent value).</p>
 <h3>Intro</h3>
 <ul>
   <li>Linear Regression - approximating linear function to scatter data in order to find out the general trend.</li>
