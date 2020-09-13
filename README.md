@@ -28,7 +28,7 @@
   </li>
   <li> Finding the best fit regression line with <b>gradient search</b>
     <br>
-    - the main puropse on this is to reduce the error = > the smallest error, the best fit line<br>
+    - the main purpose on this is to reduce the error = > the smallest error, the best fit line<br>
     - performing n iterations for different m <br>
     - using different value of m we calculate the equation of <b>y = mx + c</b> <br>
     - after every iteration, a predicted value y is being calculated using different m value <br>
