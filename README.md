@@ -4,7 +4,7 @@
 <ul>
   <li>Determining the strength of ralationships betwenn variables - of how x values effects y values:
     <br>
-    - e.g. relationship between employee's age and income, earnings and marketing sped
+    - e.g. relationship between employee's age and income, earnings and marketing spend.
   </li>
   <li>Forecasting impact or effect on y values by changing one or more x values:
     <br>
@@ -12,7 +12,7 @@
   </li>
   <li>Trend and future values forcasting:
     <br>
-    - estimating the stock price in the future when trend is stable
+    - estimating the stock price in the future when trend is stable.
   </li>
 </ul>
 <h3>Intro</h3>
