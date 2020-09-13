@@ -43,7 +43,7 @@
 
 <h3>Algorithm</h3>
 <ul>
-  <li>In regressing we want to predict continueous values as opposed to classification where we want to predict a classification of a case.</li>
+  <li>In regressing we want to predict continueous values as opposed to classification where we want to predict a classification of a case i.e. label or 0/1 category</li>
   <li>Calculating line of regression:
     <br>
     <br>
