@@ -84,6 +84,8 @@
 <h3>Accuracy</h3>
 <ul>
   <li>R squarred method to assess how close the data are to the fitted regression line.</li>
-  <li>The higher R squqrred value the better line fit.</li>
-  <li></li>
+  <br>
+  <img src="images/rsquarred.JPG">
+  <br>
+  <li>...</li>
 </ul>
