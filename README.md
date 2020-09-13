@@ -87,5 +87,5 @@
   <br>
   <img src="images/rsquarred.JPG">
   <br>
-  <li>...</li>
+  <li>When <b>R ** 2 = 1</b> then predicted values covers actual values in 100%.</li>
 </ul>
