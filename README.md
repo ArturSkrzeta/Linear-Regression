@@ -1,6 +1,6 @@
 <h2>Linear Regression</h2>
-<p><b>Regression analysis</b> is a predictive method that allos investigating the relationship between y (dependent variable) and x (independent value).</p>
 
+<p><b>Regression analysis</b> is a predictive method that allos investigating the relationship between y (dependent variable) and x (independent value).</p>
 
 <h3>Application of regression</h3>
 <ul>
@@ -20,6 +20,7 @@
 
 <h3>Linear Regression</h3>
 <ul>
+  <li>Approximating linear function to scatter data.</li>
   <li>Linear correlation between continuous x and y variable.</li>
   <li>LR output/prediction is the value of variable.</li>
   <li>Accuracy measured by loss or R square.</li>
@@ -42,7 +43,6 @@
 
 <h3>Algorithm</h3>
 <ul>
-  <li>Linear Regression - approximating linear function to scatter data in order to find out the general trend.</li>
   <li>In regressing we want to predict continueous values as opposed to classification where we want to predict a classification of a case.</li>
   <li>Calculating line of regression:
     <br>
