@@ -7,13 +7,13 @@
   <li>Calculating line of regression:
     <br>
     <br>
-    1. Calculating m and c coeffeicients based on the actual values:
+    1. Calculating m and c coeffeicients based on the actual x and y values:
     <br>
     <br>
     <img src="images/linear_reg.JPG">
     <br>
     <br>
-    2. Linear line through the predicted points for given m, c and set of x's values:
+    2. Linear function through the predicted points for given m, c and set of x's values:
     <br>
     <br>
     <img src="images/predictions.JPG">
@@ -28,7 +28,7 @@
   </li>
   <li> Finding the best fit regression line with <b>gradient search</b>
     <br>
-    - the main puropse on this is to reduce the error = > the smallest error the best fit line of regression <br>
+    - the main puropse on this is to reduce the error = > the smallest error, the best fit line<br>
     - performing n iterations for different m <br>
     - using different value of m we calculate the equation of <b>y = mx + c</b>
     - after every iteration, a predicted value y is being calculated using different m value <br>
