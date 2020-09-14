@@ -99,11 +99,9 @@
 <ul>
   <li>Linear Regression model approximated to the actual test data</li>
   <br>
-  <br>
-  <img src="images/lr-chart.jpg">
+  <img src="images/lr_chart.jpg">
   <br>
   <li>Using Linear Regression model to find y (dependent varaible) values when new x (independent variable) values given </li>
-  <br>
   <br>
   <img src="images/new_sample.jpg">
 </ul>
