@@ -1,4 +1,4 @@
-<h2>Linear Regression</h2>
+<h2>Linear Regression with Numpy and Python</h2>
 
 <p><b>Regression analysis</b> is a predictive method that allows to investigate the relationship between y (dependent variable) and x (independent value).</p>
 
