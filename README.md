@@ -97,11 +97,12 @@
 
 <h3>Demo</h3>
 <ul>
-  <li>Linear Regression model approximated to the actual test data</li>
+  <li>Linear Regression Model approximated to the actual test data:</li>
   <br>
   <img src="images/lr_chart.jpg">
   <br>
-  <li>Using Linear Regression model to find y (dependent varaible) values when new x (independent variable) values given </li>
+  <br>
+  <li>Using Linear Regression Model to find y (dependent varaible) values when new x (independent variable) values given:</li>
   <br>
   <img src="images/new_sample.jpg">
 </ul>
