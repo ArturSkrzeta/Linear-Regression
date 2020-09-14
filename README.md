@@ -23,7 +23,7 @@
   <li>Approximating linear function to scatter data.</li>
   <li>Linear correlation between continuous x and y variable.</li>
   <li>LR output/prediction is the value of variable.</li>
-  <li>Accuracy measured by loss or R square.</li>
+  <li>Accuracy measured by Mean Squared Error or R square.</li>
   <li>When y values increase along with growth of x values then we have <b>positive linear regression</b>:
     <br>
     - the function equation: y = mx + c
