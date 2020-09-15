@@ -32,18 +32,26 @@ class LinearRegression:
     def fit(self, X_train, y_train):
         # initialization
         n_samples, n_features = X_train.shape     # 80 rows x 1 column
-        self.m = np.zeros(n_features)             # as many zeros as feaures amount in numpy array
+        self.m = np.zeros(n_features)             # [0.]
         self.c = 0                                # starting with zero
 
         # gradient search - fitting regression line to actual data
         for _ in range(self.n_iters):
 
-            # first iteration
-            # [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
-            #  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
-            #  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
-            #  0. 0. 0. 0. 0. 0. 0. 0.]
+            #  first iteration
+            #  y_predicted = [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+            #  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+            #  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. ]
 
+
+            #  [...          *    [0.]    =     [0. 0 . 0. ...]
+                # [0.123]
+                # [0.456]
+                # [0.789]
+                # ...]
+
+
+            #                      (80,1), (1,)
             y_predicted = np.dot(X_train, self.m) + self.c
 
             # X_train.T transposing:
@@ -73,19 +81,23 @@ def main():
     global X_train, X_test, y_train, y_test
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234)
 
-    regressor = LinearRegression()
-    regressor.fit(X_train, y_train)
-    y_predicted = regressor.predict(X_test)
+    print(X_train)
+    m = np.zeros(1)
+    print(m)
 
-    # the lower mse the better line fit
-    mim_squared_error(y_test, y_predicted)
-    plot_lr(regressor.predict(X_test))
+    print(np.dot(X_train, m))
 
-    new_sample = np.array([[0.90],[1.20],[-0.50],[-1.13],[0.80],[-1.5],[0.99],[1.55]])
-    y_predicted_from_new_sample = regressor.predict(new_sample)
-    plot_sample(new_sample, y_predicted_from_new_sample)
-
-
+    # regressor = LinearRegression()
+    # regressor.fit(X_train, y_train)
+    # y_predicted = regressor.predict(X_test)
+    #
+    # # the lower mse the better line fit
+    # mim_squared_error(y_test, y_predicted)
+    # plot_lr(regressor.predict(X_test))
+    #
+    # new_sample = np.array([[0.90],[1.20],[-0.50],[-1.13],[0.80],[-1.5],[0.99],[1.55]])
+    # y_predicted_from_new_sample = regressor.predict(new_sample)
+    # plot_sample(new_sample, y_predicted_from_new_sample)
 
 
 if __name__ == "__main__":
