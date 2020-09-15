@@ -81,23 +81,17 @@ def main():
     global X_train, X_test, y_train, y_test
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234)
 
-    print(X_train)
-    m = np.zeros(1)
-    print(m)
+    regressor = LinearRegression()
+    regressor.fit(X_train, y_train)
+    y_predicted = regressor.predict(X_test)
 
-    print(np.dot(X_train, m))
+    # the lower mse the better line fit
+    mim_squared_error(y_test, y_predicted)
+    plot_lr(regressor.predict(X_test))
 
-    # regressor = LinearRegression()
-    # regressor.fit(X_train, y_train)
-    # y_predicted = regressor.predict(X_test)
-    #
-    # # the lower mse the better line fit
-    # mim_squared_error(y_test, y_predicted)
-    # plot_lr(regressor.predict(X_test))
-    #
-    # new_sample = np.array([[0.90],[1.20],[-0.50],[-1.13],[0.80],[-1.5],[0.99],[1.55]])
-    # y_predicted_from_new_sample = regressor.predict(new_sample)
-    # plot_sample(new_sample, y_predicted_from_new_sample)
+    new_sample = np.array([[0.90],[1.20],[-0.50],[-1.13],[0.80],[-1.5],[0.99],[1.55]])
+    y_predicted_from_new_sample = regressor.predict(new_sample)
+    plot_sample(new_sample, y_predicted_from_new_sample)
 
 
 if __name__ == "__main__":
