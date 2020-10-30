@@ -103,8 +103,6 @@
   <br>
   <br>
   <li>Using Linear Regression Model to find y (dependent varaible) values when new x (independent variable) values given:</li>
-  <br>
-  <img src="images/new_sample.jpg">
 </ul>
 
 
