@@ -52,9 +52,9 @@
 										<h5>Supervised Learning:</h5>
 										<ul>
 											<li>We train the machine with well labeled samples. Thus, the data is tagged with correct answer already so this is why we call it <i>supervised</i>.</li>
-											<li>In the process of learningn, model learns from labeled samples of data so that it can predict labels for unseen data.</li>
-											<li>During training, we can test model's accuracy by predicting labels for test samples and comparing predictions with test expeted labels.</li>
-											<li>That testing gives us the experience to optimize the model performance.</li>
+											<li>In the process of learning, model learns from labeled samples of data so that it can predict labels for unseen data.</li>
+											<li>During training, we can test model's accuracy by predicting labels for test samples and comparing predictions with test expected labels.</li>
+											<li>The testing phase gives us some experience to optimize the model performance.</li>
 											<li>There are two main methods of supervised learning:
 												<br>
 												- classification<br>
@@ -66,7 +66,7 @@
 										<h5>Unsupervised Learning:</h5>
 										<ul>
 											<li>Model learns itself from unlabelled data in order to find some patterns.</li>
-											<li>Model learns from unlabeled data which it's much easier to get as opposed to labeled data that required manual work.</li>
+											<li>Model learns from unlabeled data which it's much easier to get as opposed to labeled data that requires manual work.</li>
 											<li>In other words, a model is not being taught by example labelled data, it learns itself from uncategorized data.</li>
 											<li> There are two main methods:
 												<br>
@@ -148,17 +148,19 @@
 									<ol>
 										<li>Generating random data.</li>
 										<li>Splitting data into training and testing subset.</li>
-										<li>Training model with training subset - x training features and y training values:
+										<li>Axis x shows sample features and axis y shows corresponding values.</li>
+										<li>Training model with training subset:
 											<br>
+											- x training features and y training corresponding values,<br>
 											- training model depends on fitting linear function as much as possible to the data points
 										</li>
 										<li>Testing model with testing subset:
 											<br>
-											- putting x testing features through a model<br>
-											- model gives y predicted values<br>
-											- we compare y predicted values dividing them by y testing values getting model accuracy
+											- putting x testing features through a model,<br>
+											- model gives y predicted values,<br>
+											- we compare y predicted values dividing them by y testing values getting model accuracy.
 										</li>
-										<li>Once accuracy satisfies, we can put through model new sample features model has never seen.</li>
+										<li>Once accuracy is satisfing, we can put through model new sample features which model has never seen.</li>
 										<li>Model follows linear functon and adjusts y values for given x sample features.</li>
 									</ol>
 									<img src="images/output.jpg" width="600">
@@ -173,11 +175,9 @@
 							<section id="four">
 								<div class="container">
 									<h3>Setup</h3>
-									<p>Script requires libraries installation:</p>
-									<ul>
-										<li>pip install matplotlib</li>
-										<li>pip install numpy</li>
-									</ul>
+									<h5>Script requires libraries installation:</h5>
+									<code>pip install matplotlib</code><br>
+									<code>pip install numpy</code>
 								</div>
 							</section>
 
