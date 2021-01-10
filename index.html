@@ -143,7 +143,58 @@
 							<section id="three">
 								<div class="container">
 									<h3>Demo</h3>
-									<p>Fitting linear function to data points:</p>
+
+									<h5>Linear Regression (LR):</h5>
+									<ul>
+										<li>Approximating linear function to scatter data showing correlation between continuous x and y variable.</li>
+										<li>LR output/prediction is the y value of x variable.</li>
+										<li>When y values increase along with growth of x values then we have positive linear regression:
+											<br>
+											- the function equation: <code>y = mx + c</code>.
+										</li>
+										<li>When y values decrease along with growth of x values then we have negative linear regression:
+											<br>
+											- the function equation: <code>y = -mx + c</code>.
+										</li>
+										<li>Where:
+											<br>
+											- y is dependent variable,<br>
+											- x is independent variable,<br>
+											- m is a slope of the line,<br>
+											- c is point of intersection with y axis.
+										</li>
+									</ul>
+
+									<h5>LR fitting algorithm:</h5>
+									<ol>
+										<li>Calculating m and c coeffeicients based on the historical x and y values.
+											<br><br>
+											<img src="images/linera_reg.JPG" width="640" style="border: 1px solid gray;"><span style="font-size:12px;">source: edureka</span>
+										</li>
+										<li>Having m and c already calculated we use them as well as we use example x values to predict y values.
+											<br><br>
+											<img src="images/predictions.JPG" width="640" style="border: 1px solid gray;"><span style="font-size:12px;">source: edureka</span>
+										</li>
+										<li>We treat the distance between actual values and predicted ons as an error.
+											<br><br>
+											<img src="images/error.JPG" width="640" style="border: 1px solid gray;"><span style="font-size:12px;">source: edureka</span>
+										</li>
+										<li>Finding the best fit regression line with gradient search:
+											<br>
+											- the main purpose on this is to reduce the error = > the smallest error, the best fit line,<br>
+											- performing n iterations for different m,<br>
+											- using different values for m we calculate the equation: <code>y = mx + c</code>,<br>
+											- after every iteration, a predicted value y is being calculated using different m value.
+											<br><br>
+											<img src="images/gradient.gif" width="640" style="border: 1px solid gray;"><span style="font-size:12px;">source: edureka</span>
+										</li>
+										<li>Comparing distances between actual values and predicted ones:
+											<br>
+											- when in a current iteration of the gradient search the distance between the predicted value and actual one (error) is minimum - for this iteration we take m value for the best fit line.
+										</li>
+									</ol>
+
+									<h5>Workflow:</h5>
 									<img src="images/lr.JPG" width="500">
 									<ol>
 										<li>Generating random data.</li>
