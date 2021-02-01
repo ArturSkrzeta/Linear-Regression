@@ -12,7 +12,7 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><a href="https://arturskrzeta.github.io/"><img src="images/avatar.png" alt="" style="margin-bottom:0px;"/></a></span>
+					<span class="image avatar"><a href="https://arturskrzeta.github.io/"><img src="images/avatar.png" alt="" style="margin-bottom:0px"/></a></span>
 					<h1 id="logo"><a href="https://arturskrzeta.github.io/">Artur Skrzeta</a></h1>
 					<p>Data Analyst<br />
 					+4 years experience</p>
@@ -46,76 +46,84 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>AI Procurement Chat Bot</h2>
+										<h2>Linear Regression with Pure Math</h2>
 										<h3>Intro</h3>
-										<p>Utilizing Deep Learning for procurement bot that is able to answer most frequently asked questions regarding corporate internal web-shop.</p>
 
-										<h5>Artificial Neural Network:</h5>
+										<h5>Supervised Learning:</h5>
 										<ul>
-											<li>Consisted of artificial neurons which has their iunputs and outputs.</li>
-											<li>Inputs can be values of some features, e.g. image brightness or number of pixels (in image recognition app).</li>
-											<li>All conections between input values and neurons are weighted somehow - value of given feature is multiplied by a weight</li>
-											<li>We sum all the results of multiplication from each <code>feature_value * weight</code> and the sum goes through the so-called <b>activation function</b>:
+											<li>We train the machine with well labeled samples. Thus, the data is tagged by someone/something (human or automated script) with correct answers already so this is why we call it <i>supervised</i>.</li>
+											<li>In the process of learning, model learns from labeled samples of data so that it can predict labels for unseen data.</li>
+											<li>During training, we can test model's accuracy by predicting labels for test samples and comparing predictions with test expected labels.</li>
+											<li>The testing phase gives us some experience to optimize the model performance.</li>
+											<li>There are two main methods of supervised learning:
 												<br>
-												<code>x1 = input0 * weight + bias</code><br>
-												<code>x2 = input1 * weight + bias</code><br>&nbsp&nbsp
-												adding bias prevents from getting nulls<br>
-												<code>sum = x1 + x2</code><br>
-												<code>activ_func(sum)</code><br>&nbsp&nbsp
-												we can simplify his with below equation:<br>
-												<code>output = F(&#8721;(xw)+b)</code><br>&nbsp&nbsp
-												where F is an activation function.
+												- classification<br>
+												- regression.<br><br>
+												<img src="images/sl.JPG" width="600"><span style="font-size:12px;">source: guru99.com</span>
 											</li>
-											<li>Activation function does the following transformation:
+										</ul>
+
+										<h5>Unsupervised Learning:</h5>
+										<ul>
+											<li>Model learns itself from unlabelled data in order to find some patterns.</li>
+											<li>Model learns from unlabeled data which it's much easier to get as opposed to labeled data that requires manual work.</li>
+											<li>In other words, a model is not being taught by example labelled data, it learns itself from uncategorized data.</li>
+											<li> There are two main methods:
 												<br>
-												- <code>if sum > 0</code> then <code>output = 1</code><br>
-												- <code>if sum < 0</code> then <code>output = 0</code>
+												- classification - finding a pattern in a collection of uncategorized data and then clustering data based on that pattern.<br>
+												- association - finding relationship between data for example people that buy a new home most likely to buy new furniture.
 											</li>
-											<li>The calculated output is a neuron's prediction itself.</li>
-											<br>
-											<br>
-											<img src="images/neuron.JPG" width="600"><span style="font-size:12px;">source: udemy</span>
 										</ul>
 
-										<h5>Deep Learning:</h5>
+										<h5>Comparison:</h5>
+										<table>
+											<tr>
+												<th>Supervised Learning</th>
+												<th>Unsupervised Learning</th>
+											</tr>
+											<tr>
+												<td>Accepts input and output data.</td>
+												<td>Accepts only input data.</td>
+											</tr>
+											<tr>
+												<td>Labeled data to learn model.</td>
+												<td>Unlabeled data to learn model.</td>
+											</tr>
+											<tr>
+												<td>Model uses training data to learn a link between the input and the outputs.</td>
+												<td>Model doesn't use output data.</td>
+											</tr>
+											<tr>
+												<td>Highly accurate method.</td>
+												<td>Less accurate method.</td>
+											</tr>
+											<tr>
+												<td>Number of data category is known in advance.</td>
+												<td>Number of data category is unknown.</td>
+											</tr>
+										</table>
+
+										<h5>Regression:</h5>
 										<ul>
-											<li>The adjective "deep" refers to use of multiple neuron layers, which raw data input comes through, between input and output layer.</li>
-											<li>First outer layer is an input layer, last outer layer is an output layer, layers between are so-called hidden layers.</li>
-											<li>Hidden layers are those ones that accept input data, perform computations and produce output.</li>
-											<li>When 3 or more hidden layers we can call neural network as <b>deep network</b>.</li>
-											<li>Neural network progressively transforms data input starting from low-level (simplified) to high-level (detailed) features.</li>
-											<li>That way in image recognition application, first hidden layer recognizes edges when last hidden layer recognizes a human's face.</li>
+											<li>Regression analysis is a predictive method that allows to investigate the relationship between y (dependent variable) and x (independent value).</li>
+											<li>In regressing we want to predict continueous values as opposed to classification model where we want to predict the class of a case i.e. label or 0/1 category.</li>
 										</ul>
 
-										<h5>Cost Function:</h5>
+										<h5>Regression application:</h5>
 										<ul>
-											<li>We can evaluate performance of neurons using <b>a cost fucnction</b> that measures how far we are with prediction from an expected value.</li>
-											<li>Cost Function measures the error - <b><i>difference between output (predicted value) and reality (expected value)</b></i>.</li>
-											<li>Natural sequence of measureing error is attempting to correct the prediction (getting closer to expected values) in order to decrease an error.</li>
-											<li>The process of producing predictions and correcting predictions, getting lower and lower error, is what in fact we call learning.</li>
-											<li><u>Getting lower error</u> requeires us to <u>minimize a cost function</u>. We can achieve this by using the algorithm: <b>gradient descent</b>.</li>
+										  <li>Determining the strength of ralationships between variables - of how x values effects y values:
+										    <br>
+										    - e.g. relationship between employee's age and income, earnings and marketing spend.
+										  </li>
+										  <li>Forecasting impact or effect on y values by changing one or more x values:
+										    <br>
+										    - e.g. how much income increases when 10 000 USD invested in the specific business field.
+										  </li>
+										  <li>Trend and future values forcasting:
+										    <br>
+										    - estimating the sales in the future when trend is stable in time.
+										  </li>
 										</ul>
-
-										<h5>Gradient Descent:</h5>
-										<ul>
-											<li>Algorithm used for finding the local minimum of a function.</li>
-											<li>Finding the minimum of the cost function is the main task in the deep learning process.
-												<br>
-												<br>
-												<img src="images/gradient.JPG"><span style="font-size:12px;">source: udemy</span>
-											</li>
-											<li>Using gradient descent we can determine the best possible neural network's parameters, like weights in neuron's inputs, for minimizing the cost.</li>
-											<li>Adjusting the optimal parameters across an entire network requires us to apply so-called <b>backpropagation</b>.</li>
-											<li>When data processed once, backpropagation goes back through the neuron layers and recalculates error contribution of each neuron.</li>
-										</ul>
-
-										<h5>Here is what makes the bot working:</h5>
-										<ul>
-											<li>Script converts human's language into numbers.</li>
-											<li>Each occurance of a word is being tracked down into a list which finally serves to train the ML model.</li>
-											<li>Script takes advantage of tensorflow library that is commonly used for deep learning projects.</li>
-										</ul>
-
 									</header>
 								</div>
 							</section>
@@ -126,9 +134,7 @@
 									<h3>Features</h3>
 									<p>App includes following features:</p>
 									<ul class="feature-icons">
-										<li class="icon solid fa-check">Tensorflow</li>
-										<li class="icon solid fa-check">TFLearn</li>
-										<li class="icon solid fa-check">NLTK</li>
+										<li class="icon solid fa-check">Numpy</li>
 									</ul>
 								</div>
 							</section>
@@ -137,70 +143,112 @@
 							<section id="three">
 								<div class="container">
 									<h3>Demo</h3>
-									<p>Application:</p>
+
+									<h5>Linear Regression (LR):</h5>
+									<ul>
+										<li>Approximating linear function to scatter data showing correlation between continuous x and y variable.</li>
+										<li>LR output/prediction is the y value of x variable.</li>
+										<li>When y values increase along with growth of x values then we have positive linear regression:
+											<br>
+											- the function equation: <code>y = mx + c</code>.
+										</li>
+										<li>When y values decrease along with growth of x values then we have negative linear regression:
+											<br>
+											- the function equation: <code>y = -mx + c</code>.
+										</li>
+										<li>Where:
+											<br>
+											- y is dependent variable,<br>
+											- x is independent variable,<br>
+											- m is a slope of the line,<br>
+											- c is point of intersection with y axis.
+										</li>
+									</ul>
+
+									<h5>LR fitting algorithm:</h5>
 									<ol>
-										<li>At first, we need to learn a bot how to response depending on the question's pattern:
-											<br>
-											- if user asks questions similar to a pattern the bot was fed with during training, then bot is able to give a right answer back,<br>
-											- bot compares user's question to a patterns it learnt, then it gives the best maching answer,<br>
-											- there are ready patterns and responses given with JSON file which is data input for bot training,<br>
-											- the category of what given pattern and corresponding response refers to, indicates JSON tag key.
+										<li>Calculating m and c coeffeicients based on the historical x and y values.
+											<br><br>
+											<img src="images/linear_reg.JPG" width="640" style="border: 1px solid gray;"><span style="font-size:12px;">source: edureka</span>
 										</li>
-										<li>Preparing so-called <b>bag of words</b> to put sentences down into, understandable for computer, digits:
-											<br>
-											- bag of words is being prepared for both a bot and an user,<br>
-											- for bot, we train a bot to be able to decode human's language,<br>
-											- for user, we translate what user says into computer's lanuage.
+										<li>Having m and c already calculated we use them as well as we use example x values to predict y values.
+											<br><br>
+											<img src="images/predictions.JPG" width="640" style="border: 1px solid gray;"><span style="font-size:12px;">source: edureka</span>
 										</li>
-										<li>Bag of words depends on sequence of operations on humans language:
-											<br>
-											- sentences splitting into collection of single words called tokens:
-													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													<code>'Hello World' --> ['Hello', 'World']</code><br>
-											- bringing all words into lowercase characters<br>
-											- words stemming for faster model training:
-													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-											 		<code>'saying' --> 'say'</code><br>
-											- throwing all processed and simplified words into one collection - a bag<br>
-											- words vectorization:
-													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													if word from a bag occurs in pattern sentence then it scores 1
-													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													<code>bag of words: ['all', 'great' 'is']</code>
-													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													<code>pattern: ['great','work']</code>
-													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													<code>vectorized bag of words: [0,1,0]</code>
-													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													as 'great' word from bag occured in the pattern
+										<li>We treat the distance between actual values and predicted ons as an error.
+											<br><br>
+											<img src="images/error.JPG" width="640" style="border: 1px solid gray;"><span style="font-size:12px;">source: edureka</span>
 										</li>
-										<li>Script uses TFLearn to build the Deep Neural Network consiste of:
+										<li>Finding the best fit regression line with gradient search:
 											<br>
-											- first layer of data input,<br>
-											- x number of hidden layers in between first and last layer,<br>
-											- last layer of data output as an outocme of goind data thorugh neuorns and so-called <b>activation function</b>.
+											- the main purpose on this is to reduce the error,<br>
+											- the smaller error, the better fit line,<br>
+											- performing <code>n</code> iterations for different <code>m</code>,<br>
+											- using different values for m we calculate the equation: <code>y = mx + c</code>,<br>
+											- after every iteration, a predicted value y is being calculated using different m value.
+											<br><br>
+											<img src="images/gradient.gif" width="640" style="border: 1px solid gray;"><span style="font-size:12px;">source: edureka</span>
+										</li>
+										<li>Comparing distances between actual values and predicted ones:
+											<br>
+											- when in a current iteration of the gradient search the distance between the predicted value and actual one (error) is minimum - for this iteration we take m value for the best fit line.
 										</li>
 									</ol>
-									<p>Chatting with bot:</p>
-									<img src="images/bot.JPG" width="880">
+
+									<h5>Workflow:</h5>
+									<img src="images/lr.JPG" width="500">
+									<ol>
+										<li>Generating random data.</li>
+										<li>Splitting data into training and testing subset.</li>
+										<li>Axis x shows sample features and axis y shows corresponding values.
+												Notice that in regession we consider only one sample with multiple features.
+										</li>
+										<li>Training model with training subset:
+											<br>
+											- x training features and y training corresponding values,<br>
+											- training model depends on fitting linear function as much as possible to the data points,<br>
+											- this fitting is being perfomed by algorithm of gradient search.
+										</li>
+										<li>Testing model with testing subset:
+											<br>
+											- putting x testing features through a model,<br>
+											- model gives y predicted values,<br>
+											- we compare y predicted values dividing them by y testing values getting model accuracy.
+										</li>
+										<li>Once accuracy is satisfing, we can put through model new sample features which model has never seen.</li>
+										<li>Model follows linear functon and adjusts y values for given x sample features.</li>
+									</ol>
+									<img src="images/output.jpg" width="600">
+									<ul>
+										<li>As above for 5 new features as an input, model gives back 5 corresponding values due to linear function. Here is the outcome:
+											<br>
+											- feature <b>0.9</b> gets value of <b>28.27</b>,<br>
+											- feature <b>1.2</b> gets value of <b>36.07</b>,<br>
+											- feature <b>0.8</b> gets value of <b>25.67</b>,<br>
+											- feature <b>0.99</b> gets value of <b>30.61</b>,<br>
+											- feature <b>1.55</b> gets value of <b>45.18</b>.<br>
+										</li>
+										<li>When we read into those outcome a little bit deeper, we can see the values we get for given features are in sync with general tendency of calculated and fitted line.</li>
+									</ul>
+
 								</div>
 							</section>
+
 
 						<!-- Four -->
 							<section id="four">
 								<div class="container">
 									<h3>Setup</h3>
-									<p>Python libraries installation required:</p>
-									<code>pip install tensorflow</code><br>
-									<code>pip install tflearn</code><br>
-									<code>pip install nltk</code>
+									<h5>Script requires libraries installation:</h5>
+									<code>pip install matplotlib</code><br>
+									<code>pip install numpy</code>
 								</div>
 							</section>
 
 							<section id="five">
 								<div class="container">
 									<h3>Source Code</h3>
-									<p>You can view the source code: <a href="https://github.com/ArturSkrzeta/AI-Procurement-Bot/tree/master/bot-project">HERE</a></p>
+									<p>You can view the source code: <a href="https://github.com/ArturSkrzeta/Linear-Regression-with-Numpy-and-Python/tree/master/project">HERE</a></p>
 									<p>&nbsp</p>
 								</div>
 							</section>
